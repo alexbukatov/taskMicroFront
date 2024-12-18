@@ -14,7 +14,7 @@
     "build:prod": "webpack --env mode=production",
     "build:mobile": "webpack --env mode=production --env platform=mobile",
     "build:desktop": "webpack --env mode=production --env platform=desktop",
-    "typecheck": "tsc"
+    "tsc": "tsc"
   },
   "devDependencies": {
     "@babel/core": "^7.23.2",

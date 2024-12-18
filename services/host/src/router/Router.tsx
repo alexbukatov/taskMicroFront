@@ -4,11 +4,13 @@ import { createBrowserRouter } from 'react-router-dom';
 import shopRoutes from 'shop/Router';
 //@ts-ignore
 import adminRoutes from 'admin/Router';
+//@ts-ignore
+import aboutRoutes from 'about/Router';
 
 export const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    children: [...shopRoutes, ...adminRoutes],
+    children: [...shopRoutes, ...adminRoutes, ...aboutRoutes],
   },
 ]);

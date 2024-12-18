@@ -1,7 +1,7 @@
 import { App } from '../components/App/App';
 import { createBrowserRouter } from 'react-router-dom';
 import { Suspense } from 'react';
-import { LazyAdmin } from '@/pages/admin/Admin.lazy';
+import { LazyAbout } from '@/pages/about/About.lazy';
 
 const routes = [
   {
@@ -9,10 +9,10 @@ const routes = [
     element: <App />,
     children: [
       {
-        path: '/admin',
+        path: '/about',
         element: (
           <Suspense fallback={'Loading...'}>
-            <LazyAdmin />
+            <LazyAbout />
           </Suspense>
         ),
       },
